@@ -1,0 +1,577 @@
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    width:101vw;
+}
+
+.body {
+
+}
+
+.fullframe_sunny {
+    font-family: 'Modak', cursive;
+    overflow: hidden;
+    height: 100vmax;
+
+}
+
+.fullframe_sunny > .title {
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    font-family: 'Modak';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+
+
+}
+
+.fullframe_sunny > .title > .sunny {
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+
+    shadow: 0px 20px 0px #FFFFFF, 0px 10px 0px #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.circle1 {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: -85px;
+    top: -79px;
+    background: #FFDE2F;
+    filter: blur(100px);
+    border-radius: 2000px;
+    mix-blend-mode: multiply;
+}
+
+.circle2 {
+    overflow: hidden;
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    left: 311px;
+    top: 36px;
+    background: rgba(255, 16, 188, 0.5);
+    filter: blur(100px);
+    border-radius: 2000px;
+    mix-blend-mode: multiply;
+}
+
+
+.fullframe_snowy {
+    font-family: 'Rubik Bubbles', cursive;
+    overflow: hidden;
+    background: #B0DED6;
+    height: 100vmax;
+
+}
+
+.fullframe_snowy > .title {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    font-family: 'Rubik Bubbles', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+
+
+}
+
+.fullframe_snowy > .title > .snowy {
+    font-weight: 400;
+    font-size: 240px;
+    line-height: 284px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    filter: blur(10px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+
+    shadow: 0px 20px 0px #FFFFFF, 0px 10px 0px #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+
+.snowflake {
+    --size: 1vw;
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5vh;
+    filter: blur(20px);
+
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translate3d(var(--left-ini), 0, 0);
+    }
+    100% {
+        transform: translate3d(var(--left-end), 110vh, 0);
+    }
+}
+
+.snowflake:nth-child(1) {
+    --size: 10vw;
+    --left-ini: -8vw;
+    --left-end: 3vw;
+    left: 21vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -10s;
+    filter: blur(30px);
+}
+
+.snowflake:nth-child(2) {
+    --size: 15vw;
+    --left-ini: 2vw;
+    --left-end: 10vw;
+    left: 17vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -9s;
+    filter: blur(50px);
+}
+
+.snowflake:nth-child(3) {
+    --size: 8vw;
+    --left-ini: -5vw;
+    --left-end: -7vw;
+    left: 78vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -1s;
+    filter: blur(20px);
+}
+
+.snowflake:nth-child(4) {
+    --size: 6vw;
+    --left-ini: -1vw;
+    --left-end: -9vw;
+    left: 57vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -9s;
+    filter: blur(10px);
+}
+
+.snowflake:nth-child(5) {
+    --size: 2vw;
+    --left-ini: 9vw;
+    --left-end: -1vw;
+    left: 39vw;
+    animation: snowfall 10s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(6) {
+    --size: 8vw;
+    --left-ini: 3vw;
+    --left-end: -6vw;
+    left: 60vw;
+    animation: snowfall 10s linear infinite;
+    animation-delay: -1s;
+    filter: blur(20px);
+}
+
+.snowflake:nth-child(7) {
+    --size: 10vw;
+    --left-ini: -1vw;
+    --left-end: -4vw;
+    left: 89vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -8s;
+    filter: blur(40px);
+}
+
+.snowflake:nth-child(8) {
+    --size: 4vw;
+    --left-ini: -4vw;
+    --left-end: -7vw;
+    left: 33vw;
+    animation: snowfall 11s linear infinite;
+    animation-delay: -2s;
+    filter: blur(30px);
+}
+
+.summary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+
+
+}
+
+.summary > .title {
+
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #FFFFFF;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    height: 36px;
+    margin-bottom: 5vh;
+    flex-direction: row;
+    mix-blend-mode: overlay;
+
+
+}
+
+.summary > .title > .track {
+    flex-direction: row;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 20s linear infinite;
+
+
+}
+
+.marquee {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+
+    padding: 6px;
+
+
+    white-space: nowrap;
+
+    font-family: 'Hahmlet';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+.summary > .title > .track2 {
+    flex-direction: row;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee2 20s linear infinite;
+
+
+}
+
+.summary > .title > .track3 {
+    flex-direction: row;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee3 20s linear infinite;
+
+
+}
+
+.summary > .title > .track4 {
+    flex-direction: row;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee4 20s linear infinite;
+
+
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(300%);
+    }
+    to {
+        transform: translateX(180%);
+    }
+}
+
+@keyframes marquee2 {
+    from {
+        transform: translateX(180%);
+    }
+    to {
+        transform: translateX(60%);
+    }
+}
+
+@keyframes marquee3 {
+    from {
+        transform: translateX(60%);
+    }
+    to {
+        transform: translateX(-60%);
+    }
+}
+
+@keyframes marquee4 {
+    from {
+        transform: translateX(-60%);
+    }
+    to {
+        transform: translateX(-180%);
+    }
+}
+
+
+.fullframe_cloudy {
+    font-family: 'Rubik Puddles';
+    overflow: hidden;
+    height: 100vmax;
+    weight:100vw;
+    background: radial-gradient(57.34% 135.72% at 50% 50%, #4667D9 0%, #A6F4BC 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+}
+
+.fullframe_cloudy > .title {
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Rubik Puddles';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 240px;
+    line-height: 284px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    padding: 10px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+
+
+}
+
+.fullframe_cloudy > .title {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    font-family: 'Rubik Bubbles', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+
+
+}
+
+.fullframe_cloudy > .title > .cloudy {
+    font-weight: 400;
+    font-size: 240px;
+    line-height: 284px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.c1 {
+    position: absolute;
+width: 381px;
+height: 382px;
+left: 41px;
+top: 55px;
+
+background: rgba(255, 255, 255, 0.9);
+filter: blur(100px);
+}
+
+.c2 {
+    position: absolute;
+width: 535px;
+height: 536px;
+left: -259px;
+top: -22px;
+
+background: rgba(255, 255, 255, 0.9);
+filter: blur(100px);
+
+}
+
+.c3 {
+position: absolute;
+width: 381px;
+height: 382px;
+left: -421px;
+top: 55px;
+
+background: rgba(255, 255, 255, 0.9);
+filter: blur(100px);
+}
+
+
+.c4{
+position: absolute;
+width: 381px;
+height: 382px;
+left: 939px;
+top: 396px;
+
+background: rgba(255, 255, 255, 0.9);
+filter: blur(100px);
+}
+
+.c5{
+position: absolute;
+width: 533px;
+height: 534px;
+left: 640px;
+top: 320px;
+
+background: rgba(255, 255, 255, 0.9);
+filter: blur(100px);
+}
+
+.c6{
+position: absolute;
+width: 381px;
+height: 382px;
+left: 477px;
+top: 396px;
+
+background: rgba(255, 255, 255, 0.9);
+filter: blur(100px);
+}
+
+.fullframe_rainy {
+    font-family: 'Rubik Marker Hatch';
+    overflow: hidden;
+    height: 100vmax;
+    weight:100vw;
+background: conic-gradient(from 194.73deg at 50% 50%, #6C6C6C 0deg, rgba(108, 108, 108, 0) 360deg);
+
+}
+
+.fullframe_rainy > .title {
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Rubik Marker Hatch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 240px;
+    line-height: 284px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    padding: 10px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+
+
+}
+
+.fullframe_rainy > .title {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    font-family: 'Rubik Bubbles', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+
+
+}
+
+.fullframe_rainy > .title > .rainy {
+    font-weight: 400;
+    font-size: 240px;
+    line-height: 284px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
